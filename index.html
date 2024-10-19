@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- <img src="Image.jpg" alt="job hunt image"> -->
+    <header class="header">
+        <div class="logo">Job Hunt</div>
+
+        <nav class="navbar">
+            <a class="nav" href="Home">Home</a>
+            <a class="nav" href="jobs">Jobs</a>
+            <a class="nav" href="Contact">Contact<a>
+            <a class="nav" href="sign up">Sign up</a>
+            <a class="nav" href="Login">Login</a>
+            <input type="text" placeholder="Search for your dream Job">
+        </nav>
+
+    
+    </header>
+
+    <main class="main-content">
+        <img src="Image.jpg" class="image" alt="job hunt image">
+        <section class="companies">
+        <h2>Explore jobs by top Companies</h2>
+        <div class="company-grid">
+
+            <div class="company" onclick="showCompanyDetails('Microsoft')">Microsoft</div>
+
+
+
+            <div class="company" onclick="showCompanyDetails('Google')">Google</div>
+            <div class="company" onclick="showCompanyDetails('Adobe')">Adobe</div>
+            
+        </div>
+        <button id="show-more-companies">Show More</button>
+        </section>
+
+        <!-- Company Details Modal -->
+        <div id="company-details-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeModal()">&times;</span>
+                <div id="company-details"></div>
+            </div>
+        </div>
+
+        <section class="job-listings">
+            <h2>Search on the basis of Job Titles</h2>
+            <div class="jobs-grid">
+                <!-- Availibility of jobs based on job title -->
+                <div class="job" onclick="showJobDetails('Software Engineer', 'Company A', 'New York')">Software
+                    Engineer</div>
+                <div class="job" onclick="showJobDetails('Data Analyst', 'Company B', 'San Francisco')">Data Analyst
+                </div>
+                
+            </div>
+            <button id="show-more-jobs">Show More</button>
+        </section>
+
+        <section class="skills">
+            <h2>Search on the basis of Skills</h2>
+            <div class="skills-grid">
+                <!-- Availability of jobs on the bassis of skills -->
+                <div class="skill">JavaScript</div>
+                <div class="skill">Python</div>
+                <div class="skill">java</div>
+                
+            </div>
+            <button id="show-more-skills">Show More</button>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <p>Thank you for visiting our Website</p>
+    </footer>
+
+    
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
