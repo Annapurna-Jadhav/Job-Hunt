@@ -1,0 +1,145 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.header {
+    background-color: #363232;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar input {
+    padding: 5px;
+    border-radius: 4px;
+    border: none;
+}
+.nav:hover{
+    background-color: rgb(195, 199, 199);
+    color: black;
+    padding: 5px;
+     border-radius:5px ;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+.image{
+    width: 100vw;
+    height: 40vh;
+    margin: 0;
+    top: 0px;
+    left: 0px;
+    
+}
+
+.company-grid,.jobs-grid, .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.company,.job, .skill {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.company:hover,.job:hover, .skill:hover {
+    color: white;
+    background-color: rgb(80, 80, 194);
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(32, 21, 21, 0.2);
+}
+
+.footer {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    background-color:rgb(28, 22, 25);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* NEW ADDITION FOR CARDS GENERATION AT EACH COMPANY */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    body.dark-mode {
+        background-color: #333;
+        color: #f4f4f9;
+    }
+    
+    body.dark-mode .header, body.dark-mode .footer {
+        background-color: #222;
+    }
+    
+    body.dark-mode .job {
+        background-color: #444;
+    }
+}
