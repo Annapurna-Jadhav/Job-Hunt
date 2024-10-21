@@ -13,12 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
         { name: 'Microsoft', image: 'microsoft.png', jobTitle: 'Software Engineer', location: 'Redmond', ratings: 4.5 },
         { name: 'Google', image: 'google.png', jobTitle: 'Data Scientist', location: 'Mountain View', ratings: 4.7 },
         { name: 'Uber', image: 'uber.png', jobTitle: 'frontend developer', location: 'new york', ratings: 4.8},
-        { name: 'Amazon', image: 'Amazon.png', jobTitle: 'UX Designer', location: 'San Jose', ratings: 4.6 },
-        { name: 'Adobe', image: 'adobe.png', jobTitle: 'UX Designer', location: 'San Jose', ratings: 4.6 },
-        { name: 'Adobe', image: 'adobe.png', jobTitle: 'UX Designer', location: 'San Jose', ratings: 4.6 },
-        { name: 'Adobe', image: 'adobe.png', jobTitle: 'UX Designer', location: 'San Jose', ratings: 4.6 },
-        { name: 'Adobe', image: 'adobe.png', jobTitle: 'UX Designer', location: 'San Jose', ratings: 4.6 },
-        { name: 'Adobe', image: 'adobe.png', jobTitle: 'UX Designer', location: 'San Jose', ratings: 4.6 },
+        { name: 'Amazon', image: 'Amazon.png', jobTitle: 'UX Designer', location: 'london', ratings: 4.6 },
+        { name: 'Adobe', image: 'Adobe.png', jobTitle: 'gamedeveloper', location: 'america', ratings: 4.8 },
+        { name: 'apple', image: 'apple.png', jobTitle: 'UX Designer', location: 'india', ratings: 4.7 },
+        { name: 'ola', image: 'ola.png', jobTitle: 'data scientist', location: 'San Jose', ratings: 4.6 },
+        { name: 'Spotify', image: 'Spotify.png', jobTitle: 'UX Designer', location: 'canada', ratings: 4.6 },
+        { name: 'Netflix', image: 'Netflix.png', jobTitle: 'UX Designer', location: 'paris', ratings: 3.6 },
         
     ];
 
@@ -105,10 +105,6 @@ document.addEventListener('DOMContentLoaded', function() {
             closeModal();
         }
     }
-    toggleSwitch.addEventListener('click', function() {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
-    });
-
+    
     
 });
