@@ -5,11 +5,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #f4f4f9;
+    background-color: #ced1ca;
 }
 
 .header {
-    background-color: #363232;
+    background-color: #668589;
     color: white;
     padding: 10px;
     display: flex;
@@ -125,8 +125,9 @@ h2{
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 350px) {
     .navbar {
+        display:flex;
         flex-direction: column;
         align-items: center;
     }
@@ -142,4 +143,9 @@ h2{
     body.dark-mode .job {
         background-color: #444;
     }
+    /* .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
 }
