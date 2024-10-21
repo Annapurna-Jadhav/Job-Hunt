@@ -75,6 +75,13 @@ h2{
     transform: translateY(-5px);
     box-shadow: 0 0 15px rgba(32, 21, 21, 0.2);
 }
+button:hover{
+    background-color: #1b171b;
+    color: white;
+    border-radius:10px;
+    padding: 5px;
+    margin: 5px;
+}
 
 .footer {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -131,21 +138,5 @@ h2{
         flex-direction: column;
         align-items: center;
     }
-    body.dark-mode {
-        background-color: #333;
-        color: #f4f4f9;
-    }
     
-    body.dark-mode .header, body.dark-mode .footer {
-        background-color: #222;
-    }
-    
-    body.dark-mode .job {
-        background-color: #444;
-    }
-    /* .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    } */
 }
