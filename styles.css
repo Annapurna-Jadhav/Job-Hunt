@@ -75,7 +75,7 @@ h2{
     transform: translateY(-5px);
     box-shadow: 0 0 15px rgba(32, 21, 21, 0.2);
 }
-button:hover{
+#show-more-companies:hover,#show-more-jobs:hover,#show-more-skills:hover{
     background-color: #1b171b;
     color: white;
     border-radius:10px;
@@ -129,6 +129,23 @@ button:hover{
     text-decoration: none;
     cursor: pointer;
 }
+button {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+/* body.light-theme {
+    background-color:white;
+    color: black;
+}
+
+body.dark-theme {
+    background-color:black;
+    color:white;
+} */
 
 
 
